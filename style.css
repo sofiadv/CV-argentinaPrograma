@@ -1,0 +1,107 @@
+
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    background-color: #EEEEEE;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --color1: #12486B;
+    --color2: #419197;
+    --color3: #78D6C6;
+    --color4: #F5FCCD;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 5%;
+}
+img{
+    border-radius: 50%;
+    margin-top: 2%;
+    border: 2px var(--color2) solid;
+
+}
+h1{
+    margin: 4%;
+    text-align: left;
+}
+nav{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 96%;
+}
+nav ul{
+    display: grid;
+    grid-template-columns:  repeat(8, 1fr);
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav li{
+    list-style-type: none;
+    color: var(--color4);
+    font-weight: bold;
+    border-right: 1px var(--color2) solid;
+    margin: 0;
+    background-color: var(--color1);
+    border: 1px var(--color2) solid;
+
+}
+
+.linea-simple{
+    padding-top: 5%;
+}
+
+#perfil-personal p{
+    width: 80%;
+    background-color: var(--color1);
+    color: white;
+    text-align: justify;
+    padding: 2%;
+    border-radius: 10px;
+    line-height: 2em;
+}
+
+#experiencia-profesional li{
+    list-style-type: none;
+}
+
+#experiencia-profesional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+#perfil-personal{
+    display: none;
+}
+
+
+#formación-academica{
+    display: none;
+}
+
+#datos-personales{
+    display: none;
+}
+
+#skills{
+    display: none;
+}
+
+#habilidades-interpersonales{
+    display: none;
+}
+
+#idiomas{
+    display: none;
+}
+
+#links{
+    display: none;
+}
