@@ -5,61 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-    <title>Curriculun Vitae</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
 </head>
 <body>
     <header>
         <div class="header">
             <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Imagen Perfil">
-
-            <h1>Sofia Durañona y vedia CV</h1>
+            <h1>Sofia Durañona y Vedia CV</h1>
         </div>
         <nav>
             <ul>
-                <li class="linea-simple">Perfil Personal</li>
-                <li>Experiencia Profesional</li>
-                <li>Formación Académica</li>
-                <li>Habilidades Interpersonales</li>
-                <li class="linea-simple">Idiomas</li>
-                <li class="linea-simple">Skills</li>
-                <li class="linea-simple">Links</li>
-                <li class="linea-simple">Datos de Contacto</li>
-
+                <li class="linea-simple" onclick="mostrarSeccion('perfil-personal')">Perfil Personal</li>
+                <li onclick="mostrarSeccion('experiencia-profesional')">Experiencia Profesional</li>
+                <li onclick="mostrarSeccion('formación-academica')">Formación Académica</li>
+                <li onclick="mostrarSeccion('habilidades-interpersonales')">Habilidades Interpersonales</li>
+                <li class="linea-simple" onclick="mostrarSeccion('idiomas')">Idiomas</li>
+                <li class="linea-simple" onclick="mostrarSeccion('skills')">Skills</li>
+                <li class="linea-simple" onclick="mostrarSeccion('links')">Links</li>
+                <li class="linea-simple" onclick="mostrarSeccion('datos-personales')">Datos de Contacto</li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="perfil-personal">
-            <p>Soy una programadora web full stack con gran experiencia en Node JS,
-React, Express, HTML, CSS, Javascript, MySQL, Creación y consumo de
-APIs, Git, Metodologías Ágiles - Scrum, OOP, Patron de arquitectura MVC,
-Postman y Sequelize. Además, también tengo conocimientos en Python y
-una gran predisposición para aprender lenguajes nuevos de forma rápida.
-Mi meta es desarrollarme como profesional en el área de la programación
-web y seguir aprendiendo día a día para poder aportar soluciones
-innovadoras y creativas a los desafíos en los que me involucre.
-</p>
+            <p>Soy una programadora web full stack con gran experiencia en Node JS, React, Express, HTML, CSS, Javascript, MySQL, Creación y consumo de APIs, Git, Metodologías Ágiles - Scrum, OOP, Patrón de arquitectura MVC, Postman y Sequelize. Además, también tengo conocimientos en Python y una gran predisposición para aprender lenguajes nuevos de forma rápida. Mi meta es desarrollarme como profesional en el área de la programación web y seguir aprendiendo día a día para poder aportar soluciones innovadoras y creativas a los desafíos en los que me involucre.</p>
         </div>
         <div id="experiencia-profesional">
-            <div>
-                <h2>PROFESORA DE JAVASCRIPT, HTML Y CCS Y DE ITGS PARA IBDP</h2>
-                <p>Agosto 2021 - Actual - St. Catherine´s Moorlands Schoo</p>
+            <div class="job">
+                <h2>PROFESORA DE JAVASCRIPT, HTML Y CSS Y DE ITGS PARA IBDP</h2>
+                <p>Agosto 2021 - Actual - St. Catherine´s Moorlands School</p>
             </div>
-            <div>
+            <div class="job">
                 <h2>DESARROLLO FRONT-END</h2>
-                <p>Marzo 2023 -Campaña de becas - Universidad Austral</p>
+                <p>Marzo 2023 - Campaña de becas - Universidad Austral</p>
             </div>
-            <div>
-                <h2>PROGRAMACION WEB FULL STACK</h2>
+            <div class="job">
+                <h2>PROGRAMACIÓN WEB FULL STACK</h2>
                 <p>Febrero 2020 - Agosto 2020 - VEVA1012.COM</p>
             </div>
-            <div>
+            <div class="job">
                 <h2>Ventas y desarrollo backend</h2>
-                <p>Marzo 2020 - Marzo 2022- La Desnudez de Eva</p>
+                <p>Marzo 2020 - Marzo 2022 - La Desnudez de Eva</p>
             </div>
-            <div>
+            <div class="job">
                 <h3>Desarrollo Frontend</h3>
                 <ul>
                     <li>Planificación y estimación del proyecto del sitio web.</li>
@@ -69,40 +59,31 @@ innovadoras y creativas a los desafíos en los que me involucre.
                     <li>Gestión de conexiones asíncronas con Ajax y/o Fetch.</li>
                     <li>Uso de sesiones y cookies para almacenamiento de información.</li>
                     <li>Implementación de validación de formularios con JavaScript.</li>
-                    <li>Mantenimiento del sitio web y resolución de errores.
-                    </li>
+                    <li>Mantenimiento del sitio web y resolución de errores.</li>
                 </ul>
             </div>
-            <div>
+            <div class="job">
                 <h3>Desarrollo Backend</h3>
                 <ul>
-                    <li>Planificación y estimación del desarrollo del servidor web.
-                    </li>
-                    <li>Creación y puesta en marcha del servidor web.
-                    </li>
-                    <li>Diseño, análisis e implementación de la base de datos.
-                    </li>
-                    <li>Mantenimiento del sitio web y resolución de errores.
-                    </li>
-                    <li>Gestión de la autenticación y las sesiones de los usuarios.
-                    </li>
-                    <li>Gestión de conexiones asíncronas a servicios web.
-                    </li>
-                    <li>Integración con otras plataformas mediante el uso de APIs.
-                    </li>
-                    <li>Uso de sesiones y cookies para almacenamiento de información.
-                    </li>
-                </ul>    
+                    <li>Planificación y estimación del desarrollo del servidor web.</li>
+                    <li>Creación y puesta en marcha del servidor web.</li>
+                    <li>Diseño, análisis e implementación de la base de datos.</li>
+                    <li>Mantenimiento del sitio web y resolución de errores.</li>
+                    <li>Gestión de la autenticación y las sesiones de los usuarios.</li>
+                    <li>Gestión de conexiones asíncronas a servicios web.</li>
+                    <li>Integración con otras plataformas mediante el uso de APIs.</li>
+                    <li>Uso de sesiones y cookies para almacenamiento de información.</li>
+                </ul>
             </div>
-            <div>
-                <h2>orientacion profesional y dictado de cursos de grafologia</h2>
-                <p>Septiembre 2009 - Febrero 2020 </p>
+            <div class="job">
+                <h2>Orientación profesional y dictado de cursos de grafología</h2>
+                <p>Septiembre 2009 - Febrero 2020</p>
             </div>
-            <div>
-                <h2>asistente de gerente regional</h2>
+            <div class="job">
+                <h2>Asistente de gerente regional</h2>
                 <p>2007 - 2009 - Red Hat S.A.</p>
             </div>
-            <div>
+            <div class="job">
                 <h2>Recursos Humanos y selección de personal</h2>
                 <p>2002 -  2009 - Casa de la Moneda.</p>
             </div>
@@ -110,18 +91,18 @@ innovadoras y creativas a los desafíos en los que me involucre.
         <div id="formación-academica">
             <ul>
                 <li>2023 - CodigoFacilito - Bootcamp de Python Avanzado</li>
-                <li>2022 - Codo a Codo - fullstack Python</li>
-                <li>2021 - Harvardx cs50's Web Programming with Python and JavaScript</li>
-                <li>2020 - DIGITAL hOUSE - PROGRAMACION WEB FULL STACK</li>
-                <li>2002-2005- Instituto superior emerson-Grafologa publica</li>
-                <li>1996-1999 - universdad de bs. as. - ciencia politica</li>
+                <li>2022 - Codo a Codo - Fullstack Python</li>
+                <li>2021 - HarvardX CS50's Web Programming with Python and JavaScript</li>
+                <li>2020 - DIGITAL HOUSE - PROGRAMACIÓN WEB FULL STACK</li>
+                <li>2002-2005 - Instituto Superior Emerson - Grafóloga pública</li>
+                <li>1996-1999 - Universidad de Buenos Aires - Ciencia Política</li>
             </ul>
         </div>
         <div id="datos-personales">
             <ul>
                 <li>Fecha de nacimiento: 21-01-1978</li>
                 <li>Nacionalidad: Argentina</li>
-                <li>Barrio:  Beccar, San Isidro, Bs. As., Argentina</li>
+                <li>Barrio: Beccar, San Isidro, Bs. As., Argentina</li>
                 <li>Mail: sofiadv@gmail.com</li>
                 <li>Celular: 11 6136-5075</li>
             </ul>
@@ -137,9 +118,9 @@ innovadoras y creativas a los desafíos en los que me involucre.
                 <li>MySQL</li>
                 <li>Creación y consumo de APIs</li>
                 <li>Git</li>
-                <li>Metodologias Ágiles - Scrum</li>
+                <li>Metodologías Ágiles - Scrum</li>
                 <li>OOP</li>
-                <li>Patron de arquitectura MVC</li>
+                <li>Patrón de arquitectura MVC</li>
                 <li>Postman</li>
                 <li>Sequelize</li>
                 <li>VSCode</li>
@@ -147,7 +128,7 @@ innovadoras y creativas a los desafíos en los que me involucre.
                 <li>Django</li>
             </ul>
         </div>
-        <div id="habilidades-interpersonales">7
+        <div id="habilidades-interpersonales">
             <ul>
                 <li>Integridad</li>
                 <li>Flexibilidad</li>
@@ -168,8 +149,10 @@ innovadoras y creativas a los desafíos en los que me involucre.
             </ul>
         </div>
         <div id="links">
-            <li>-https://github.com</li>
-            <li>https://www.linkedin.com</li>
+            <ul>
+                <li>- https://github.com</li>
+                <li>- https://www.linkedin.com</li>
+            </ul>
         </div>
     </main>
     <footer></footer>

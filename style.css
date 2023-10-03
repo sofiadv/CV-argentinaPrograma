@@ -1,63 +1,67 @@
-
-
-*{
+/* Estilos generales */
+* {
     box-sizing: border-box;
     text-align: center;
     margin: auto;
-    background-color: #EEEEEE;
     font-family: 'Montserrat', sans-serif;
 }
 
-:root{
+:root {
     --color1: #12486B;
     --color2: #419197;
     --color3: #78D6C6;
     --color4: #F5FCCD;
 }
-.header{
+
+/* Estilos del encabezado */
+.header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 5%;
 }
-img{
+
+img {
     border-radius: 50%;
     margin-top: 2%;
-    border: 2px var(--color2) solid;
-
+    border: 2px solid var(--color2);
 }
-h1{
+
+h1 {
     margin: 4%;
     text-align: left;
 }
-nav{
+
+/* Estilos de la barra de navegación */
+nav {
     margin-top: 2%;
     margin-bottom: 2%;
     width: 96%;
 }
-nav ul{
+
+nav ul {
     display: grid;
-    grid-template-columns:  repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     padding: 0;
     margin: 0;
-    
 }
 
-nav li{
+nav li {
     list-style-type: none;
     color: var(--color4);
     font-weight: bold;
-    border-right: 1px var(--color2) solid;
+    border-right: 1px solid var(--color2);
     margin: 0;
     background-color: var(--color1);
-    border: 1px var(--color2) solid;
-
+    border: 1px solid var(--color2);
+    cursor: pointer;
 }
 
-.linea-simple{
+.linea-simple {
     padding-top: 5%;
 }
 
-#perfil-personal p{
+/* Estilos de las secciones */
+#perfil-personal p {
     width: 80%;
     background-color: var(--color1);
     color: white;
@@ -67,41 +71,71 @@ nav li{
     line-height: 2em;
 }
 
-#experiencia-profesional li{
+#experiencia-profesional li {
     list-style-type: none;
 }
 
-#experiencia-profesional{
+#experiencia-profesional {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
 }
 
-#perfil-personal{
-    display: none;
+.job {
+    background-color: var(--color1);
+}
+
+#formación-academica ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+#datos-personales ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+#skills ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+#habilidades-interpersonales ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+#idiomas ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+#links ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+#experiencia-profesional {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+/* Estilos para cada trabajo (job) */
+.job {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
 }
 
 
-#formación-academica{
-    display: none;
-}
 
-#datos-personales{
-    display: none;
-}
 
-#skills{
-    display: none;
-}
 
-#habilidades-interpersonales{
-    display: none;
-}
-
-#idiomas{
-    display: none;
-}
-
-#links{
-    display: none;
-}
